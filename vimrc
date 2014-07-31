@@ -49,3 +49,6 @@
     "Load After Config:
     runtime config/after.vim
 "}}}
+"
+set noesckeys "turns off esc keys. Esc keys causes vim to annoyingly wait after esc is pressed.
+set scrolloff=10        "Don't allow the cursor to go much past the middle
