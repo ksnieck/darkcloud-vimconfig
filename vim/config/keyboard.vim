@@ -517,9 +517,9 @@
         vnoremap <Leader>d "_d
 
         "map copy/paste shortcuts to more typical ones
-        nnoremap <C-v> P
-        xmap <C-v> <Plug>ReplaceWithRegisterVisual
-        inoremap <C-v> <C-O>p
+        "nnoremap <C-v> P ---- 
+        "xmap <C-v> <Plug>ReplaceWithRegisterVisual
+        "inoremap <C-v> <C-O>p
         nnoremap <C-c> y
         vnoremap <C-c> y
         nnoremap <C-x> x

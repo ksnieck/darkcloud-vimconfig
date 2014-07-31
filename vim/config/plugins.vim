@@ -24,6 +24,11 @@
     let g:vim_json_syntax_conceal=0
 "}}}
 
+"PYINTERACTIVE: {{{
+    " import math libraries into python repl
+    autocmd VimEnter * PyInteractiveEval from math import *
+"}}}
+
 "EASYTAGS: {{{
     let g:easytags_file = '~/.vim/tags'
     let g:easytags_suppress_ctags_warning = 1
