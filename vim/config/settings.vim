@@ -70,15 +70,19 @@
         let &showbreak="" "character to prepend to wrapped lines when linewrapping is enabled
 
         "enable tab completion in command mode and configure how it handles extensions
-        set completeopt=longest,menuone
+        set completeopt=longest,menuone,preview
         set wildmenu
-        set wildmode=list:longest,full
+        set wildmode=list:longest
         set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png
         set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
+        set noesckeys "turns off esc keys. Esc keys causes vim to annoyingly wait after esc is pressed.
     "}}}
 
+    let g:autostartchecker=0 " it's super annoying when it doesn't work
+
     "BEHAVIOUR: {{{
-        set autochdir "change to a file's directory when it's opened
+        "set autochdir "change to a file's directory when it's opened
+        set autowriteall
         set history=250 "size of the undo history
         set whichwrap=b,s,<,>,[,] "scrolling left/right off current line wraps to the next/previous
         set smarttab expandtab autoindent tabstop=4 shiftwidth=4 "configure tabs
